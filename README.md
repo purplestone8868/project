@@ -1,45 +1,18 @@
-# Project Structure
-This repository is organized to follow best practices for data science projects. Each folder has a clear purpose to keep code, data, and documentation easy to find and maintain.
-project/
-│── data/               # Raw and processed datasets
-│    └── dataset.csv
-│
-│── images/             # Figures and plots generated during analysis
-│    ├── dataset-image.png
-│    └── predictions.png
-│
-│── src/                # Source code scripts
-│    ├── 01_generate-data.py
-│    ├── 02_visualize-data.py
-│    └── 03_plot-predictions.py
-│
-│── docs/               # Reports and supporting documents
-│    ├── Documents/
-│    └── Report.pdf
-│
-│── reports/            # Jupyter notebooks and detailed analysis
-│    └── Report.ipynb
-│
-│── weekly-meetings/    # Meeting notes and planning discussions
-│
-│── LICENSE             # License information
-│── README.md           # Project overview (this file)
-│── .gitignore          # Files and folders to ignore in version control
-### Notes
+# UBC Toolbox Project – Assignment 6
 
-data/: Always keep raw datasets unchanged. Any transformations should generate new files.
+This repository contains the work for Assignment 6 of the UBC Data Toolbox course.  
+It demonstrates Git branching, pull requests, and reproducible computational environments.
 
-images/: Helps separate figures from code and data for easier reporting.
+## Repository Structure
+- `Report.ipynb` – Main Jupyter notebook report
+- `environment.yaml` – Environment file to replicate the computational setup
+- `gen-data.py` – Script to generate sample data
+- `dataset-csv/` – Example dataset used in the report
+- `Documents/`, `weekly meetings/` – Supporting project files
 
-src/: Scripts are numbered (01_, 02_, 03_) to indicate execution order.
+## Environment Setup
+To recreate the environment, run:
 
-docs/: Central place for final project documents and PDFs.
-
-reports/: Jupyter notebooks and reproducible analysis live here.
-
-weekly-meetings/: Organized notes to track team progress and decisions.
-
-This structure ensures the project is:
-✔️ Reproducible
-✔️ Easy to navigate
-✔️ Ready for collaboration
+```bash
+conda env create -f environment.yaml
+conda activate project-env
