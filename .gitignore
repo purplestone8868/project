@@ -1,3 +1,8 @@
 **/*.log
 .DS_Store
+# ignore Jupyter Notebook Checkpoints
 .ipynb_checkpoints
+# ignore Python cache
+_pycache_/
+*.pyc
+
