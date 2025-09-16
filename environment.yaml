@@ -1,4 +1,4 @@
-name: dstoolbox
+name: project-env
 channels:
   - defaults
 dependencies:
@@ -27,6 +27,7 @@ dependencies:
   - libgfortran5=11.2.0=h1234567_1
   - libgomp=11.2.0=h1234567_1
   - libopenblas=0.3.29=ha39b09d_0
+  - libraries report ipynb
   - libsodium=1.0.20=heac8642_0
   - libstdcxx-ng=11.2.0=h1234567_1
   - libuuid=1.41.5=h5eee18b_0
@@ -50,7 +51,7 @@ dependencies:
   - ptyprocess=0.7.0=pyhd3eb1b0_2
   - pure_eval=0.2.3=py310h06a4308_0
   - pygments=2.19.1=py310h06a4308_0
-  - python=3.10.18=h1a3bd86_0
+  - python=3.10 or higher
   - python-dateutil=2.9.0post0=py310h06a4308_2
   - pyzmq=26.2.0=py310h6a678d5_0
   - readline=8.3=hc2a1206_0
